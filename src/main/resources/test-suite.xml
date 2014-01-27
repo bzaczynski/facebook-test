@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!DOCTYPE suite SYSTEM 'http://testng.org/testng-1.0.dtd'>
+<suite name="Facebook Test Regression">
+
+    <parameter name="selenium.webdriver.engine" value="chrome"/>
+
+    <!-- enable logging of selenium commands to the report -->
+    <parameter name="selenium.webdriver.reporter.enabled" value="true"/>
+    <parameter name="selenium.webdriver.reporter.listener" value="com.sabre.qa.gary.web.WebDriverReportingListener"/>
+
+    <test name="demo">
+        <packages>
+            <package name="com.company.*" />
+        </packages>
+    </test>
+
+</suite>

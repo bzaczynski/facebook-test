@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xmlDataProvider>
+
+    <!-- define XML tags and map them to custom JavaBeans -->    
+    <type name="profile" class="com.company.model.FacebookProfile" />
+
+
+    <!-- declare named global objects for reuse -->
+    
+    <declare name="facebook.test.user.real">
+        <profile>
+            <username><!--TYPE_YOUR_USERNAME_HERE--></username>
+            <password><!--TYPE_YOUR_PASSWORD_HERE--></password>
+        </profile>
+    </declare>
+
+    <declare name="facebook.test.user.fake">
+        <profile>
+            <username>lorem</username>
+            <password>ipsum</password>
+        </profile>
+    </declare>
+
+</xmlDataProvider>

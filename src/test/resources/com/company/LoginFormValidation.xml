@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testData>
+
+    <!--
+    Supported data types for arguments:
+     - built-in Java primitives,
+     - enums,
+     - arrays (including nested ones without limit),
+     - custom JavaBeans (including compound objects).
+
+     Array types are inferred automatically to best reflect their contents.
+    -->
+
+    <test method="shouldShowErrorOnIncorrectEmail">
+
+        <!-- each argument list triggers test method invocation -->
+
+        <arguments>
+            <profile>
+                <username>foo</username>
+                <password>bar</password>
+            </profile>
+            <boolean>false</boolean>
+        </arguments>
+
+        <arguments>
+
+            <!-- arguments can be defined directly or referenced/reused -->
+
+            <profile ref="facebook.test.user.fake" />
+
+            <boolean>true</boolean>
+
+        </arguments>
+
+    </test>
+
+</testData>

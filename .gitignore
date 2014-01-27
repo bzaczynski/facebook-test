@@ -1,0 +1,27 @@
+# eclipse
+
+.classpath
+.project
+.settings/
+test-output/
+
+# IntelliJ Idea
+
+*.iml
+*.ipr
+*.iws
+.idea/
+.idea
+*.iml
+
+
+# Maven
+
+target/
+generated/
+
+
+# Java
+
+*.class
+
